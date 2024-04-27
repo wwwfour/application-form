@@ -20,14 +20,14 @@ app.post('/data', (req, res) => {
   const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-      user: 'berkesevinc59@gmail.com', // Gönderici e-posta adresi
-      pass: 'qtni yraw ngoq hxxr' // Gönderici e-posta şifresi
+      user: 'your-mail@gmail.com', // Gönderici e-posta adresi
+      pass: 'mail app password' // Gönderici e-posta şifresi
     }
   });
 
   const mailOptions = {
-    from: 'berkesevinc59@gmail.com',
-    to: '230220070@firat.edu.tr', // Alıcı e-posta adresi
+    from: 'your-password@gmail.com',
+    to: 'taker-mail', // Alıcı e-posta adresi
     subject: `${firstName}`,
     text: `
       İsmi Soyismi: ${firstName}
